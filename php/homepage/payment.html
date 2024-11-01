@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC ZONE - Shipping Information</title>
+    <link rel="stylesheet" href="shipping.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="home.html" id="logo-link">  
+        <img src="../../img/logo.png" alt="logo" name="logo" id="logo-image">
+    </a>
+            <div class="nav-links">
+                 <a href="user-profile.php" class="user">
+                            <i class="bi bi-person"></i> <!-- Icon only for User -->
+                        </a>
+                <a href="cart.php"><i class="bi bi-cart"></i></a>
+                <a href="../logout.php" class="btn">Log Out</a>
+            </div>
+        </nav>
+
+    <div class="container">
+        <div class="head-title">
+            <h1>Payment Gateway</h1>
+        </div>
+
+        <form id="form" method="post" action="">
+            <p>Select payment method</p>
+            <label>
+                <input type="radio" name="payment" value="esewa">
+                <span>ESEWA</span>
+                <img src="../../../img/payment/esewa.webp" alt="ESEWA">
+            </label>
+            <label>
+                <input type="radio" name="payment" value="khalti">
+                <span>Khalti</span>
+                <img src="../../../img/payment/khalti.png" alt="Khalti">
+            </label>
+            <label>
+                <input type="radio" name="payment" value="Visa">
+                <span>Visa card</span>
+                <img src="../../../img/payment/visa.png" alt="Visa">
+            </label>
+            <button type="submit" id="pay" name="pay">Pay </button>
+        </form>
+    </div>
+</body>
+</html>
